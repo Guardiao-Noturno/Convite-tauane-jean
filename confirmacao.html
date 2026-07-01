@@ -1,0 +1,141 @@
+<!-- ========================= -->
+<!-- ARQUIVO: confirmacao.html -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Confirmar Presença</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+padding:20px;
+}
+
+form{
+background:white;
+padding:40px;
+border-radius:20px;
+width:100%;
+max-width:500px;
+}
+
+input,textarea{
+
+width:100%;
+padding:15px;
+margin-bottom:20px;
+
+}
+
+button{
+
+width:100%;
+padding:15px;
+
+background:#0b1f4d;
+color:white;
+
+border:none;
+border-radius:40px;
+
+}
+  
+  .voltar{
+
+display:block;
+
+width:100%;
+
+padding:15px;
+
+margin-top:15px;
+
+background:#0b1f4d;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+text-align:center;
+
+font-weight:bold;
+
+box-sizing:border-box;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<form onsubmit="enviar(event)">
+
+<h1>Confirmar Presença</h1>
+
+<br>
+
+<input type="text"
+id="nome"
+placeholder="Seu nome"
+required>
+
+<textarea
+id="mensagem"
+placeholder="Mensagem">
+</textarea>
+
+  <button type="submit">
+Confirmar
+</button>
+  
+  <a href="index.html" class="voltar">
+Voltar ao convite
+</a>
+  
+</form>
+
+<script>
+
+function enviar(event){
+
+event.preventDefault();
+
+const nome =
+document.getElementById('nome').value;
+
+const mensagem =
+document.getElementById('mensagem').value;
+
+const texto = 
+`Olá! Confirmo presença no casamento.
+
+👤 Nome: ${nome}
+
+📝 Mensagem: ${mensagem}`;
+
+  window.open(
+    `https://wa.me/55939391864369?text=${encodeURIComponent(texto)}`,
+    '_blank'
+  );
+
+}
+  
+</script>
+
+</body>
+</html>

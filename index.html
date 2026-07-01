@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jean Carlos & Tauane Alves</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f7f4ef;
+color:#fff;
+overflow-x:hidden;
+}
+
+
+/* FOTO FUNDO */
+
+header{
+
+width:100%;
+height:100vh;
+
+background-image:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url('imagns/casal.jpg');
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+padding:20px;
+
+position:relative;
+}
+
+
+/* CONTEÚDO */
+
+.hero{
+width:100%;
+max-width:500px;
+padding:20px;
+}
+
+
+/* NOMES */
+
+.nomes{
+
+font-family:'Great Vibes',cursive;
+
+font-size:3.5rem;
+
+line-height:1.2;
+
+text-shadow:0 4px 10px rgba(0,0,0,.4);
+}
+
+
+/* DATA */
+
+.data{
+
+margin-top:20px;
+
+font-size:1rem;
+
+letter-spacing:1px;
+
+line-height:1.6;
+
+text-shadow:0 3px 8px rgba(0,0,0,.4);
+}
+
+
+/* TEXTO */
+
+.texto{
+
+margin-top:25px;
+
+font-size:.85rem;
+
+line-height:1.7;
+
+padding:0 10px;
+
+text-shadow:0 3px 8px rgba(0,0,0,.4);
+}
+
+
+/* ÍCONES */
+
+.interacao{
+
+margin-top:35px;
+
+font-size:1.1rem;
+
+font-weight:600;
+
+text-shadow:0 3px 8px rgba(0,0,0,.4);
+}
+
+.icones{
+
+margin-top:25px;
+
+display:flex;
+
+justify-content:center;
+
+gap:12px;
+
+flex-wrap:nowrap;
+}
+
+.item{
+
+text-decoration:none;
+
+color:white;
+
+width:70px;
+
+text-align:center;
+}
+
+
+/* CÍRCULOS */
+
+.circulo{
+
+width:70px;
+height:70px;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.18);
+
+backdrop-filter:blur(8px);
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:1.8rem;
+
+margin:auto;
+
+transition:.3s;
+
+border:1px solid rgba(255,255,255,.2);
+}
+
+.item:hover .circulo{
+
+transform:translateY(-5px);
+
+background:rgba(255,255,255,.28);
+}
+
+
+/* TEXO DOS ÍCONES */
+
+.item span{
+
+display:block;
+
+margin-top:8px;
+
+font-size:.65rem;
+
+font-weight:700;
+
+line-height:1.3;
+
+text-shadow:0 3px 8px rgba(0,0,0,.4);
+}
+
+
+/* RESPONSIVO */
+
+@media(max-width:500px){
+
+.nomes{
+font-size:3rem;
+}
+
+.icones{
+gap:8px;
+}
+
+.circulo{
+width:62px;
+height:62px;
+font-size:1.5rem;
+}
+
+.item{
+width:62px;
+}
+
+.item span{
+font-size:.60rem;
+}
+
+.data{
+font-size:.9rem;
+}
+
+.texto{
+font-size:.78rem;
+}
+
+}
+  .contador{
+margin-top:20px;
+font-size:1.1rem;
+font-weight:600;
+text-align:center;
+text-shadow:0 3px 8px rgba(0,0,0,.4);
+}
+
+</style>
+</head>
+
+<body>
+
+
+<header>
+
+<div class="hero">
+
+
+<div class="nomes">
+
+Jean Carlos
+
+<br>
+
+&
+
+<br>
+
+Tauane Alves
+
+</div>
+
+
+<div class="data">
+
+03 DE OUTUBRO DE 2026
+
+<br>
+10:00 HORAS
+</div>
+
+<div id="contador" class="contador">
+Carregando...
+</div>
+  
+<div class="texto">
+
+CONVITE DE CASAMENTO
+
+</div>
+
+
+<div class="interacao">
+
+Toque nos ícones
+
+</div>
+
+
+<div class="icones">
+
+
+<a href="local.html" class="item">
+
+<div class="circulo">
+📍
+</div>
+
+<span>
+LOCAL
+</span>
+
+</a>
+
+
+
+<a href="festa.html" class="item">
+
+<div class="circulo">
+🍽️
+</div>
+
+<span>
+FESTA
+</span>
+
+</a>
+
+
+<a href="confirmacao.html" class="item">
+
+<div class="circulo">
+✅
+</div>
+
+<span>
+CONFIRMAR
+</span>
+
+</a>
+
+
+<a href="presentes.html" class="item">
+
+<div class="circulo">
+🎁
+</div>
+
+<span>
+PRESENTES
+</span>
+
+</a>
+
+
+</div>
+
+</div>
+
+</header>
+
+  <script>
+
+const dataCasamento = new Date("2026-10-03T10:00:00").getTime();
+
+function atualizarContador(){
+
+    const agora = new Date().getTime();
+
+    const distancia = dataCasamento - agora;
+
+    if(distancia < 0){
+
+        document.getElementById("contador").innerHTML =
+        "💍 Chegou o grande dia!";
+
+        return;
+    }
+
+    const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+
+    const horas = Math.floor(
+        (distancia % (1000 * 60 * 60 * 24))
+        / (1000 * 60 * 60)
+    );
+
+    const minutos = Math.floor(
+        (distancia % (1000 * 60 * 60))
+        / (1000 * 60)
+    );
+
+    const segundos = Math.floor(
+        (distancia % (1000 * 60))
+        / 1000
+    );
+
+    document.getElementById("contador").innerHTML =
+        `⏳ ${dias} dias ${horas}h ${minutos}m ${segundos}s`;
+}
+
+atualizarContador();
+
+setInterval(atualizarContador, 1000);
+
+</script>
+  
+</body>
+</html>

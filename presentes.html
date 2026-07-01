@@ -1,0 +1,683 @@
+<!-- ========================= -->
+<!-- ARQUIVO: presentes.html -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lista de Presentes</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f4f6fb;
+padding:30px;
+color:#444;
+}
+
+.titulo{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:40px;
+color:#0b1f4d;
+}
+
+.presentes{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:white;
+border-radius:25px;
+overflow:hidden;
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+text-align:center;
+}
+
+.card h3{
+margin-bottom:10px;
+font-size:1.2rem;
+}
+
+.valor{
+color:#0b1f4d;
+font-size:1.5rem;
+font-weight:700;
+margin:15px 0;
+}
+
+.btn{
+
+width:100%;
+
+padding:14px;
+
+border:none;
+border-radius:40px;
+
+background:#0b1f4d;
+color:white;
+
+font-size:1rem;
+font-weight:600;
+
+cursor:pointer;
+transition:.3s;
+
+}
+
+.btn:hover{
+opacity:.9;
+}
+
+.voltar{
+
+display:block;
+width:250px;
+
+margin:50px auto 0;
+
+text-align:center;
+text-decoration:none;
+
+padding:15px;
+
+background:#0b1f4d;
+color:white;
+
+border-radius:40px;
+font-weight:600;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 class="titulo">
+Lista de Presentes
+</h1>
+
+<div class="presentes">
+
+
+<div class="card">
+<img src="imagns/escorredor.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Escorredor</h3>
+<p class="valor">R$ 25,00</p>
+<button class="btn" onclick="copiarPix('25,00')">
+Presentear
+</button>
+</div>
+</div>
+
+
+<div class="card">
+<img src="imagns/hermetico.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>potes hermeticos</h3>
+<p class="valor">R$ 130,00</p>
+<button class="btn" onclick="copiarPix('130,00')">
+Presentear
+</button>
+</div>
+</div>
+
+<div class="card">
+<img src="imagns/pressao.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Panela de Pressao</h3>
+<p class="valor">R$ 141,00</p>
+<button class="btn" onclick="copiarPix('141,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+<div class="card">
+<img src="imagns/cortina.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Cortina</h3>
+<p class="valor">R$ 80,00</p>
+<button class="btn" onclick="copiarPix('80,00')">
+Presentear
+</button>
+</div>
+</div>
+
+<div class="card">
+<img src="imagns/prato.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Conjunto de pratos</h3>
+<p class="valor">R$ 50,00</p>
+<button class="btn" onclick="copiarPix('50,00')">
+Presentear
+</button>
+</div>
+</div>
+
+<div class="card">
+<img src="imagns/processador.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Processador</h3>
+<p class="valor">R$ 125,00</p>
+<button class="btn" onclick="copiarPix('125,00')">
+Presentear
+</button>
+</div>
+</div>
+
+<div class="card">
+<img src="imagns/boleira.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>kit café da manhâ</h3>
+<p class="valor">R$ 200,00</p>
+<button class="btn" onclick="copiarPix('200,00')">
+Presentear
+</button>
+</div>
+</div>
+
+
+<div class="card">
+<img src="imagns/tapete.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Tapete</h3>
+<p class="valor">R$ 150,00</p>
+<button class="btn" onclick="copiarPix('150,00')">
+Presentear
+</button>
+</div>
+</div>
+
+
+<div class="card">
+<img src="imagns/varal.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Varal</h3>
+<p class="valor">R$ 65,00</p>
+<button class="btn" onclick="copiarPix('65,00')">
+Presentear
+</button>
+</div>
+</div>
+
+<div class="card">
+<img src="imagns/liquidificador.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Liquidificador</h3>
+<p class="valor">R$ 110,00</p>
+<button class="btn" onclick="copiarPix('110,00')">
+Presentear
+</button>
+</div>
+</div>
+
+<div class="card">
+<img src="imagns/panos.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Panos de Prato</h3>
+<p class="valor">R$ 25,00</p>
+<button class="btn" onclick="copiarPix('25,00')">
+Presentear
+</button>
+</div>
+</div>
+
+<div class="card">
+<img src="imagns/microondas.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Micro-ondas</h3>
+<p class="valor">R$ 120,00</p>
+<button class="btn" onclick="copiarPix('120,00')">
+Presentear
+</button>
+</div>
+</div>
+
+<div class="card">
+<img src="imagns/maquina.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Máquina de lavar</h3>
+<p class="valor">R$ 150,00</p>
+<button class="btn" onclick="copiarPix('150,00')">
+Presentear
+</button>
+</div>
+</div>  
+  
+<div class="card">
+      <img src="imagns/lencou.jpg">
+      <div class="card-content">
+        <h4>imagem ilustrativa</h4>
+        <h3>Jogo de cama</h3>
+        <p class="valor">R$ 60,00</p>
+        <button class="btn" onclick="copiarPix('60,00')">Presentear</button>
+      </div>
+    </div>
+
+<div class="card">
+<img src="imagns/tv.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Televisão</h3>
+<p class="valor">R$ 170,00</p>
+<button class="btn" onclick="copiarPix('170,00')">
+Presentear
+</button>
+</div>
+</div>
+
+<div class="card">
+<img src="imagns/cama.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Cama do casal</h3>
+<p class="valor">R$ 150,00</p>
+<button class="btn" onclick="copiarPix('150,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/panela.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Jogo de panela</h3>
+<p class="valor">R$ 150,00</p>
+<button class="btn" onclick="copiarPix('150,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/talheres.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Jogo de Talher</h3>
+<p class="valor">R$ 65,00</p>
+<button class="btn" onclick="copiarPix('65,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/garrafa.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Garrafa</h3>
+<p class="valor">R$ 43,00</p>
+<button class="btn" onclick="copiarPix('43,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/batedeira.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Batedeira</h3>
+<p class="valor">R$ 70,00</p>
+<button class="btn" onclick="copiarPix('70,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/xicara.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Xicara</h3>
+<p class="valor">R$ 70,00</p>
+<button class="btn" onclick="copiarPix('70,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/copo.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Jogo de Copos</h3>
+<p class="valor">R$ 38,00</p>
+<button class="btn" onclick="copiarPix('38,00')">
+Presentear
+</button>
+</div>
+</div>
+
+  <div class="card">
+<img src="imagns/travessa.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Travessa</h3>
+<p class="valor">R$ 30,00</p>
+<button class="btn" onclick="copiarPix('30,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/travesseiro.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Travesseiro</h3>
+<p class="valor">R$ 35,00</p>
+<button class="btn" onclick="copiarPix('35,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+    <div class="card">
+<img src="imagns/jara.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Jara</h3>
+<p class="valor">R$ 55,00</p>
+<button class="btn" onclick="copiarPix('55,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+    <div class="card">
+<img src="imagns/escoredor.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Escoredor</h3>
+<p class="valor">R$ 45,00</p>
+<button class="btn" onclick="copiarPix('')">
+Presentear
+</button>
+</div>
+</div>
+  
+    <div class="card">
+<img src="imagns/painel.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Painel</h3>
+<p class="valor">R$ 130,00</p>
+<button class="btn" onclick="copiarPix('130,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/sabao.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>kit banheiro</h3>
+<p class="valor">R$ 95,00</p>
+<button class="btn" onclick="copiarPix('95,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/estante.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Rack</h3>
+<p class="valor">R$ 150,00</p>
+<button class="btn" onclick="copiarPix('150,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/banheiro.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>kit tapetes</h3>
+<p class="valor">R$ 57,00</p>
+<button class="btn" onclick="copiarPix('57,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/organizador.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Organizador</h3>
+<p class="valor">R$ 51,00</p>
+<button class="btn" onclick="copiarPix('51,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/kitjanta.jpg">
+<div class="card-content">
+  <h4>image ilustrativa</h4>
+<h3>kit jantar</h3>
+<p class="valor">R$ 250,00</p>
+<button class="btn" onclick="copiarPix('250,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/faca.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>facas</h3>
+<p class="valor">R$ 155,00</p>
+<button class="btn" onclick="copiarPix('155,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/forma.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Formas</h3>
+<p class="valor">R$ 110,00</p>
+<button class="btn" onclick="copiarPix('110,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/bambu.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Organizador em bambu</h3>
+<p class="valor">R$ 115,00</p>
+<button class="btn" onclick="copiarPix('115,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/furadeira.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Furadeira</h3>
+<p class="valor">R$ 160,00</p>
+<button class="btn" onclick="copiarPix('160,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/frigideira.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Frigideira</h3>
+<p class="valor">R$ 160,00</p>
+<button class="btn" onclick="copiarPix('160,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/toalha.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Toalhas</h3>
+<p class="valor">R$ 90,00</p>
+<button class="btn" onclick="copiarPix('90,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+  <div class="card">
+<img src="imagns/cafeteira.jpg">
+<div class="card-content">
+  <h4>imagem ilustrativa</h4>
+<h3>Cafeteira</h3>
+<p class="valor">R$ 300,00</p>
+<button class="btn" onclick="copiarPix('300,00')">
+Presentear
+</button>
+</div>
+</div>
+  
+</div>
+
+<a href="index.html" class="voltar">
+Voltar ao convite
+</a>
+
+
+<script>
+
+function copiarPix(valor){
+
+const valorPix = valor.replace(",", ".");
+
+let payload =
+
+"000201" +
+"26450014BR.GOV.BCB.PIX" +
+"011161144418348" +
+"0208PRESENTE" +
+"52040000" +
+"5303986" +
+"54" + valorPix.length.toString().padStart(2,'0') + valorPix +
+"5802BR" +
+"5920JEAN CARLOS OLIVEIRA" +
+"6008ITAITUBA" +
+"62070503***" +
+"6304";
+
+
+function CRC16(payload) {
+
+function ord(str){
+return str.charCodeAt(0);
+}
+
+let crc = 0xFFFF;
+
+for (let i = 0; i < payload.length; i++) {
+
+crc ^= ord(payload[i]) << 8;
+
+for (let j = 0; j < 8; j++) {
+
+if ((crc <<= 1) & 0x10000) {
+crc ^= 0x1021;
+}
+
+crc &= 0xFFFF;
+}
+}
+
+return crc.toString(16).toUpperCase().padStart(4, '0');
+
+}
+
+payload += CRC16(payload);
+
+navigator.clipboard.writeText(payload);
+
+alert(
+
+`✅ Pix copiado!
+
+Valor: R$ ${valor}
+
+Cole no banco em:
+Área Pix → Pix Copia e Cola`
+
+);
+
+}
+
+</script>
+
+</body>
+</html>
